@@ -4,7 +4,7 @@ on: pull_request
 
 jobs:
   run_if: 
-    if: ${{ github.head_ref = 'figma-tokens' }}
+    if: ${{ github.head_ref == 'figma-tokens' }}
     name: Process Figma Tokens
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -25,7 +25,7 @@ jobs:
         run: npx style-dictionary build --config config.json
 
       - name: Commit changes
-        use: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v9
         with:
           author_name: Summer
           author_email: dxq3442@gmail.com
