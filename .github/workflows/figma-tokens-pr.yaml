@@ -4,12 +4,13 @@ on: pull_request
 
 jobs:
   run_if: 
-    if: ${{ github.head_ref = 'figma-tokens' }}
+    if: ${{ github.head_ref == 'figma-tokens' }}
     name: Process Figma Tokens
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout to master
+        uses: actions/checkout@master
         with: 
           repository: ${{ github.event.pull_request.head.repo.full_name}}
           ref: ${{ github.event.pull_request.head.ref}}
@@ -24,7 +25,7 @@ jobs:
         run: npx style-dictionary build --config config.json
 
       - name: Commit changes
-        use: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v9
         with:
           author_name: Summer
           author_email: dxq3442@gmail.com

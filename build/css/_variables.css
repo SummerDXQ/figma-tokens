@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 07 Nov 2022 03:01:24 GMT
+ * Generated on Mon, 07 Nov 2022 04:33:49 GMT
  */
 
 :root {
@@ -8,4 +8,7 @@
   --sd-xs: 8px;
   --sd-sm: 16px;
   --sd-md: 24px;
+  --sd-lg: 32px;
+  --sd-xl: 40px;
+  --sd-xxl: 48px;
 }
