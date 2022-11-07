@@ -15,11 +15,11 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name}}
           ref: ${{ github.event.pull_request.head.ref}}
 
-      - name: Install Dependencies
-        run: npm install
+      # - name: Install Dependencies
+      #   run: npm install
 
-      - name: Run token-transformer
-        run: npx token-transformer tokens/tokens.json tokens/sd-input-tokens.json --resolveRefences false
+      # - name: Run token-transformer
+      #   run: npx token-transformer tokens/tokens.json tokens/sd-input-tokens.json --resolveRefences false
 
       - name: Run style-dictionary
         run: npx style-dictionary build --config config.json
