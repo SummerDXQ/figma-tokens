@@ -1,10 +1,9 @@
 /**
  * Do not edit directly
- * Generated on Mon, 07 Nov 2022 04:53:55 GMT
+ * Generated on Tue, 06 Dec 2022 22:34:44 GMT
  */
 
 :root {
-  --sd-global-xs: 8px;
   --sd-global-sm: 16px;
   --sd-global-md: 24px;
   --sd-global-lg: 32px;
@@ -12,4 +11,10 @@
   --sd-global-xxl: 48px;
   --sd-global-xxs: 4px;
   --sd-global-xxxs: 2px;
+  --sd-global-xs: 8px;
+  --sd-global-xxxxxs: 1px;
+  --sd-global-green: #597302;
+  --sd-global-dark-xss: 1px;
+  --sd-global-xssssss: 1px;
+  --sd-global-xxxxxxxxs: 2px;
 }
